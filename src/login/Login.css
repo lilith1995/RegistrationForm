@@ -180,9 +180,6 @@ input::placeholder {
   background-color: #ccc;
 }
 
-/**
- * * Login and signup forms
- * */
 .user_options-forms {
   position: absolute;
   top: 50%;
@@ -218,12 +215,12 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: gray;
+  color: rgb(0, 0, 0);
   letter-spacing: 0.1rem;
   transition: border-color 0.2s ease-in-out;
 }
 .user_options-forms .forms_field-input:focus {
-  border-color: gray;
+  border-color: rgb(82, 72, 110);
 }
 .user_options-forms .forms_buttons {
   display: flex;
@@ -234,7 +231,7 @@ input::placeholder {
 .user_options-forms .forms_buttons-forgot {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1rem;
-  color: #ccc;
+  color: rgb(10, 10, 10);
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
 }
@@ -278,9 +275,6 @@ input::placeholder {
   visibility: visible;
 }
 
-/**
- * * Triggers
- * */
 .user_options-forms.bounceLeft {
   -webkit-animation: bounceLeft 1s forwards;
           animation: bounceLeft 1s forwards;
@@ -299,9 +293,6 @@ input::placeholder {
           animation: bounceRight 1s forwards;
 }
 
-/**
- * * Responsive 990px
- * */
 @media screen and (max-width: 990px) {
   .user_options-forms {
     min-height: 350px;
