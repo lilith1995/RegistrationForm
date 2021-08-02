@@ -1,26 +1,22 @@
 import "./Login.css";
 
 export const Login = () => {
-    const signupButton = document.getElementById('signup-button'),
-    loginButton = document.getElementById('login-button'),
-    userForms = document.getElementById('user_options-forms')
+  const signupButton = document.getElementById('signup-button'),
+  loginButton = document.getElementById('login-button'),
+  userForms = document.getElementById('user_options-forms')
 
-/**
- * Add event listener to the "Sign Up" button
- */
 signupButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceRight')
-  userForms.classList.add('bounceLeft')
+userForms.classList.remove('bounceRight')
+userForms.classList.add('bounceLeft')
 }, false)
 
 /**
- * Add event listener to the "Login" button
- */
+* Add event listener to the "Login" button
+*/
 loginButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceLeft')
-  userForms.classList.add('bounceRight')
+userForms.classList.remove('bounceLeft')
+userForms.classList.add('bounceRight')
 }, false)
-  
       return (
 <section className="user">
     <div className="user_options-container">
@@ -121,6 +117,6 @@ loginButton.addEventListener('click', () => {
     </div>
   </section>
       );
+      
     };
-
     
