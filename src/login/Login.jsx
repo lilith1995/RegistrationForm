@@ -12,7 +12,7 @@ export const Login = () => {
           With your personal account, you can track your favorite properties and receive custom alerts about new listings that come to market.
           </p>
           <button className="user_unregistered-signup" id="signup-button">
-            Sign up
+            Join us!
           </button>
         </div>
         <div className="user_options-registered">
@@ -27,7 +27,7 @@ export const Login = () => {
       </div>
       <div className="user_options-forms" id="user_options-forms">
         <div className="user_forms-login">
-          <h2 className="forms_title">Login</h2>
+          <h2 className="forms_title">Welcome</h2>
           <form className="forms_form">
             <fieldset className="forms_fieldset">
               <div className="forms_field">
