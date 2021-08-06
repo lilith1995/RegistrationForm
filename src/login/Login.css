@@ -22,7 +22,7 @@ input {
   border: 0;
   outline: 0;
 }
-input[type=submit] {
+input[type="submit"] {
   cursor: pointer;
 }
 input::-moz-placeholder {
@@ -47,9 +47,6 @@ input::placeholder {
   color: rgb(24, 21, 21);
 }
 
-/**
- * * Bounce to the left side
- * */
 @-webkit-keyframes bounceLeft {
   0% {
     transform: translate3d(100%, -50%, 0);
@@ -72,9 +69,7 @@ input::placeholder {
     transform: translate3d(0, -50%, 0);
   }
 }
-/**
- * * Bounce to the left side
- * */
+
 @-webkit-keyframes bounceRight {
   0% {
     transform: translate3d(0, -50%, 0);
@@ -97,9 +92,7 @@ input::placeholder {
     transform: translate3d(100%, -50%, 0);
   }
 }
-/**
- * * Show Sign Up form
- * */
+
 @-webkit-keyframes showSignUp {
   100% {
     opacity: 1;
@@ -114,16 +107,14 @@ input::placeholder {
     transform: translate3d(0, 0, 0);
   }
 }
-/**
- * * Page background
- * */
+
 .user {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: rgb(189, 214, 241);
+  background: rgb(218, 226, 235);
   background-size: cover;
 }
 .user_options-container {
@@ -138,9 +129,6 @@ input::placeholder {
   border-radius: 3px;
 }
 
-/**
- * * Registered and Unregistered user box and text
- * */
 .user_options-registered,
 .user_options-unregistered {
   width: 50%;
@@ -261,7 +249,8 @@ input::placeholder {
   width: calc(100% - 80px);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out,
+    transform 0.5s ease-in-out;
 }
 .user_options-forms .user_forms-signup {
   transform: translate3d(120px, 0, 0);
@@ -277,11 +266,11 @@ input::placeholder {
 
 .user_options-forms.bounceLeft {
   -webkit-animation: bounceLeft 1s forwards;
-          animation: bounceLeft 1s forwards;
+  animation: bounceLeft 1s forwards;
 }
 .user_options-forms.bounceLeft .user_forms-signup {
   -webkit-animation: showSignUp 1s forwards;
-          animation: showSignUp 1s forwards;
+  animation: showSignUp 1s forwards;
 }
 .user_options-forms.bounceLeft .user_forms-login {
   opacity: 0;
@@ -290,7 +279,7 @@ input::placeholder {
 }
 .user_options-forms.bounceRight {
   -webkit-animation: bounceRight 1s forwards;
-          animation: bounceRight 1s forwards;
+  animation: bounceRight 1s forwards;
 }
 
 @media screen and (max-width: 990px) {
@@ -304,12 +293,12 @@ input::placeholder {
     margin-top: 30px;
   }
   .user_options-forms .user_forms-signup,
-.user_options-forms .user_forms-login {
+  .user_options-forms .user_forms-login {
     top: 40px;
   }
 
   .user_options-registered,
-.user_options-unregistered {
+  .user_options-unregistered {
     padding: 50px 45px;
   }
 }
