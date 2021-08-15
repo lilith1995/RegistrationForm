@@ -11,8 +11,8 @@ export const Login = () => {
   const [accessToken, setAccessToken] = useState("");
   const [refreshToken, setRefreshToken] = useState("");
 
-  // const history = useHistory();
-  // history.push('\home')
+  const history = useHistory();
+  history.push("/home");
   const Signin = () => {
     console.log(loginEmail, loginPassword);
     if (!isValidEmail(loginEmail)) {
@@ -30,7 +30,7 @@ export const Login = () => {
           return res.json();
         })
         .then((res) => {
-          // history.push('\home')  //after pushing data to localstorage or redux
+          history.push("/home"); //after pushing data to localstorage or redux
           console.log(res);
         })
         .catch((e) => {
